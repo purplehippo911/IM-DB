@@ -1,0 +1,19 @@
+
+
+.title {
+    font-weight: 900;
+    font-size: 1.6em;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.header {
+    background: var(--mainBg);
+}
+
+.row {
+    display: flex;
+    gap: 30rem;
+}

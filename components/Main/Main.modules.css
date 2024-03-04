@@ -1,0 +1,14 @@
+
+title {
+    font-size: large;
+    
+}
+
+.col{
+    align-items: center;
+}
+
+#genre {
+    background: var(--mainBg);
+    padding: .5em 1rem;
+}

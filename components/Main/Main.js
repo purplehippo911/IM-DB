@@ -1,26 +1,31 @@
-import { useEffect } from "react"
-import movieApiRequest from "@utils/movieApiRequest";
+import { useEffect, useState } from "react";
+import MovieDiscovery from "../MovieDiscovery/MovieDiscovery";
+
 
 export default function Main() {
+    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        movieApiRequest()
-    },[])
-
+   useEffect(() => {
+        setIsLoading(false);
+    }, []);
 
     return (
-        <section>
+        <article>
             <div className="container col">
-                <h1 className="title">Find your favourite</h1>
-
-            <select id="genre" name="Genre"> 
-                <option value="all">All</option>
-                <option value="adventure">Adventure</option>
-                <option value="action">Action</option>
-                <option value="comedy">Comedy</option>
-                <option value="fantasy">Fantasy</option>
-            </select>
+                <h1 className="title">Find your favourites</h1>
+                <select id="genre" name="Genre"> 
+                    <option value="all">All</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
             </div>
-        </section>
-    )
+            {isLoading ? (
+                <div>Countries are loading...</div>
+            ) : (
+                <MovieDiscovery/>
+            )}
+        </article>
+    );
 }

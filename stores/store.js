@@ -1,7 +1,7 @@
-import { atom } from "nanostores"; 
+import { atom, use } from "nanostores"; 
 
-export const $data = atom([]);
+export const $data = atom(["apple", "orange"]);
 
 export function addData(newData) {
-    $data.set(currentData => [...currentData, newData]);
+    use($data, currentData => [...currentData, newData]);
 }

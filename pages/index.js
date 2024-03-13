@@ -12,10 +12,8 @@ export default function Home() {
     <div className="">
       <Head>
         <title>IM-BD Movie page</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons/Movie icons.gif" />
       </Head>
-
-      <Header/>     
 
       <Main/>   
 

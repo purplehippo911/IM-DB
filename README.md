@@ -10,3 +10,5 @@ IM-DB is the IMDB for IM students.
 <a href="https://www.flaticon.com/free-icons/like" title="like icons">Like icons created by Gregor Cresnar - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/like" title="like icons">Like icons created by DinosoftLabs - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/good" title="good icons">Good icons created by juicy_fish - Flaticon</a>

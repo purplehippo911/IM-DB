@@ -34,13 +34,13 @@ export default function NetflixSlider() {
             spaceBetween={30}
             navigation={true}
             loop={true}
-            // autoplay={{
-            //     delay: 2000,
-            //     disableOnInteraction: false,
-            // }}
+            autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+            }}
             keyboard={true}
             effect="coverflow"
-            modules={[ Navigation, EffectCoverflow]}
+            modules={[Autoplay, Navigation, EffectCoverflow]}
         
          >
             

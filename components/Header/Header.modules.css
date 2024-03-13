@@ -15,5 +15,53 @@
 
 .row {
     display: flex;
-    gap: 30rem;
 }
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    font-size: .8em;
+    font-weight: 700;
+}
+
+.list__item--button {
+    background: inherit;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.list__item--button:hover {
+    border: 2px solid white;
+    scale: 1.1;
+}
+
+.list__link {
+    color: white;
+}
+
+.list__link:hover {
+    color: var(--secondaryColor);
+}
+
+
+/* mobile header */
+@media screen and (max-width: 800px) {
+
+}
+
+.desktop-nav {
+    margin-left: auto;
+    display: none;
+}
+
+/* desktop header */
+@media screen and (min-width: 815px) {
+    .desktop-nav {
+        display: flex;
+    }
+}
+
+

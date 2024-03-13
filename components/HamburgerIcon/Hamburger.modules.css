@@ -1,11 +1,14 @@
 .HamburgerIcon {
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none;
 }
 
-.check[type = "checkbox"] {
+#check {
   appearance: none;
   display: none;
-  visibility: hidden;
+  visibility: none;
 }
 
 .bar {
@@ -57,4 +60,40 @@ input[type]:checked ~ span.bottom {
 input[type]:checked ~ span.middle {
   transform: translateX(-20px);
   opacity: 0;
+}
+
+/* mobile nav */
+
+.mobile-nav {
+  position: absolute;
+  top:80px;
+  right: -40px;
+  background: black;
+  width: 120vh;
+  height: 100vh;
+  z-index: 2;
+  display: none;
+  animation: mobile-nav-animation 2s;
+  transition: .2s;
+}
+
+@keyframes mobile-nav-animation {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(20px);}
+  100% {transform: translateX(30px);}
+}
+
+.mobile-nav .nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type]:checked ~ .mobile-nav {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .HamburgerIcon {
+    display: flex;
+  }
 }

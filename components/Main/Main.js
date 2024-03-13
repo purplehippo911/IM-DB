@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MovieDiscovery from "../MovieDiscovery/MovieDiscovery";
+import NetflixSlider from "../NetflixSlider/NetflixSlider";
 
 
 export default function Main() {
@@ -24,7 +24,7 @@ export default function Main() {
             {isLoading ? (
                 <div>Countries are loading...</div>
             ) : (
-                <MovieDiscovery/>
+                <NetflixSlider/>
             )}
         </article>
     );

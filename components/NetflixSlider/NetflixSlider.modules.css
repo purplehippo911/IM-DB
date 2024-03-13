@@ -1,0 +1,94 @@
+/* initialising default STUFF 😇  */
+
+.swiper-slide__section {
+    display: none
+}
+
+/* SWIPER 💀 📱  */
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--mainBg) !important
+
+}
+
+.swiper-slide {
+    padding: 2rem 0;
+}
+
+.swiper-slide:hover {
+    background: var(--mainBg);
+    border-radius: 1rem;
+    transition:.2s ease-in;
+    scale: 1.2;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.swiper-slide {
+    opacity: 20%;
+}
+
+.swiper-slide-active + .swiper-slide ,
+.swiper-slide:hover{
+    opacity: 100%
+}
+
+/* swiper content stuff 👀 */
+.swiper-slide__container {
+    overflow:scroll;
+}
+
+.swiper-slide__container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.swiper-slide:hover .swiper-slide__container img {
+    border-radius: 1rem 1rem 0rem 0;   
+}
+
+.swiper-slide:hover .swiper-slide__section
+{
+    display: block;
+}
+
+.swiper-slide__text {
+    font-size: .5em;
+}
+
+.swiper-slide__title {
+    font-size: .8em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.icons-container {
+    display: flex;
+    height: 2rem;
+    /* outline: 2px solid red; */
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    max-height: 500px;
+}
+
+/* .icon-wrapper {
+    background: red;
+    border-radius: 50%;
+    padding: 2rem;
+} */
+
+
+/* mobile version 🤓📱 (android is superior) */
+
+
+

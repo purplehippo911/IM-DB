@@ -17,7 +17,10 @@
   font-size: 1.1em;
 
 }
-
+ 
+a {
+  list-style: none;
+}
 
 .container {
   width: 100%;
@@ -34,4 +37,12 @@
 
 .grid {
   display: grid;
+}
+
+.icons {
+  width: 0;
+  height: 0;
+  height: 1rem;
+  width: 1rem;
+  scale: 2;
 }

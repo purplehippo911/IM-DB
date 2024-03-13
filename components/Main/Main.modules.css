@@ -1,14 +1,28 @@
 
-title {
-    font-size: large;
-    
+.hero__title {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
 }
 
 .col{
     align-items: center;
 }
 
-#genre {
-    background: var(--mainBg);
-    padding: .5em 1rem;
+#filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icons__arrow--right {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 800px) {
+    .hero__title {
+        font-size: 1.5em;
+    }
 }

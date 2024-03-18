@@ -4,6 +4,8 @@ import "@components/Header/Header.modules.css";
 import "@components/Main/Main.modules.css"
 import "@components/HamburgerIcon/Hamburger.modules.css"
 import "@components/NetflixSlider/NetflixSlider.modules.css";
+import "@styles/about.modules.css";
+
 
 import RootLayout from "@components/RootLayout"
 

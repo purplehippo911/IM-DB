@@ -1,0 +1,28 @@
+.about-me__card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__card--hero {
+    background: url("/icons/movie tapes.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+
+.about-me__card--profile {
+    padding: 2rem;
+}
+.article__about-me.container {
+    width: 80%;
+}
+
+.about-me__card .col {
+    justify-content: center;
+}
+
+/* Cursor */
+.typed-cursor {
+    font-size: 1.5em;
+}

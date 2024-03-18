@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 // swiper related imports
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import { addData } from "stores/store";
 
 export default function NetflixSlider() {
     const [movieList, setMovieList] = useState([]);
@@ -40,14 +42,15 @@ export default function NetflixSlider() {
             }}
             keyboard={true}
             effect="coverflow"
-            modules={[Autoplay, Navigation, EffectCoverflow]}
+            modules={[Autoplay, Navigation, EffectCoverflow, Keyboard]}
         
          >
             
             {movieList.map((movie) => (
                 <SwiperSlide
                 key={movie.id}>
-                    <a className="swiper-slide__container">
+
+                    <Link href={`/movies/${movie.title}`} className="swiper-slide__container">
                         <picture className="swiper-slide__picture">
                             <img className="swiper_slide__img" src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}/>
                         </picture>
@@ -63,7 +66,7 @@ export default function NetflixSlider() {
                                 </picture>
                             </picture>
                         </section>
-                    </a>
+                    </Link>
                 </SwiperSlide>
                     
                 ))}

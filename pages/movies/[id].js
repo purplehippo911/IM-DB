@@ -5,7 +5,12 @@ import MovieList from "@components/MovieList/MovieList";
 export default function Movie() {
     return (
         <>
-         <Link href="/" className="">
+        
+        <MovieList/>
+        
+        <br/>
+
+        <Link href="/" className="">
             <picture className="w-10">
                 <Image 
                     src="/icons/Right arrow.png" 
@@ -16,10 +21,6 @@ export default function Movie() {
             </picture>
             <button>Back</button>
         </Link>
-        
-        <br/>
-        
-        <MovieList/>
         </>
     )
 }

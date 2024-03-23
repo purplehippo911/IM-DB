@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+// import { db } from "firebase/clientApp";
+// import { collection, addDoc } from "firebase/firestore";
+// import React, { useStore } from "react";
+
 // swiper related imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay, Keyboard } from 'swiper/modules';

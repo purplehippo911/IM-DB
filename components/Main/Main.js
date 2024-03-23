@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NetflixSlider from "../NetflixSlider/NetflixSlider";
+import SearchBar from "@components/SearchBar/SearchBar";
 
 
 export default function Main() {
@@ -13,14 +14,7 @@ export default function Main() {
         <article>
             <div className="container col">
                 <h1 className="hero__title">Find your favourites</h1>
-                {/* <select id="genre" name="Genre"> 
-                    <option value="all">All</option>
-                    <option value="adventure">Adventure</option>
-                    <option value="action">Action</option>
-                    <option value="comedy">Comedy</option>
-                    <option value="fantasy">Fantasy</option>
-                </select> */}
-                <section id="filter">
+                {/* <section id="filter">
 
                     <picture className="icons-container">
                         <img src="/icons/Right arrow.png" className="icons icons__arrow icons__arrow--right"/>
@@ -33,7 +27,9 @@ export default function Main() {
                     </picture>
 
                     
-                </section>
+                </section> */}
+
+                <SearchBar/>
                 
             </div>
             {isLoading ? (

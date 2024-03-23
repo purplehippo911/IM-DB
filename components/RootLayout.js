@@ -7,6 +7,7 @@ export default function RootLayout({children}) {
         <div className="">
           <Header />
           <main>{children}</main>
+          
         </div>
         {/* <Footer /> */}
       </div>

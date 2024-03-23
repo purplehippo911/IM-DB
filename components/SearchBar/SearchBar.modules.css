@@ -1,0 +1,10 @@
+
+.search-bar {
+    outline: 2px solid red;
+    padding: 0;
+}
+
+.container--search-bar {
+    padding: 0;
+    font-size: .8em;
+}

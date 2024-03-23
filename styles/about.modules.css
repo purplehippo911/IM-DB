@@ -8,12 +8,16 @@
     background: url("/icons/movie tapes.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 2rem;
+    padding: 10rem;
 }
 
 .about-me__card--profile {
-    padding: 2rem;
+    background: var(--secondaryColor);
+    *{
+        color: white;
+    }
 }
+
 .article__about-me.container {
     width: 80%;
 }

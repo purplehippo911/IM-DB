@@ -1,9 +1,8 @@
 import TypedComponent from "@components/TypedComponent"
-import Image from "next/image"
 
 export default function About() {
     return(
-        <article className="article--about-me">
+        <article className="article-about-me">
             <section className="about-me__card about-me__card--hero">
                 <div className="container col">
                     <div>
@@ -19,13 +18,13 @@ export default function About() {
                 <div className="container col">
                     <h2>Made by</h2>
                     <a href="https://purplehipposwebsite.netlify.app">
-                        <Image 
+                        <img 
                             src="/icons/Yellow Muggie.png"
                             alt="Yellow Muggie profile icon"
                             width="200"
                             height="200"
                         />
-                        <p>Muggie</p>
+                        <p style={{textAlign: "center", fontSize: ".8em", opacity: "80%"}}>Muggie</p>
                     </a>
                 </div>
 
